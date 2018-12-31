@@ -66,7 +66,7 @@ var Navbar = React.createClass({
 		return (
 			<div className="header">
 				<a className="logo" href="/">
-					<h1><b>JS</b>cript</h1>
+					<h1><b>LearnCoding</b></h1>
 				</a>
 				
 				<ul className="inline actions">

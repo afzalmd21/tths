@@ -45,7 +45,7 @@ var Editor = React.createClass({
 		return (
 			<div className="main">
 				<div className="infos">
-					<a href="http://thibaudb.com/jscript/" target="_blank" title="Thibaud B. post and repository">
+					<a href="afzalmd21.github.io/tths/" target="_blank" >
 						<i className="fa fa-info-circle"></i>
 					</a>
 				</div>

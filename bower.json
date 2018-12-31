@@ -1,10 +1,10 @@
 {
-  "name": "jscript",
+  "name": "tths",
   "version": "1.0.0",
   "authors": [
-    "Thibaud B. <contact@thibaudb.com>"
+    "tths"
   ],
-  "description": "Not another JavaScript playground",
+  "description": "tths",
   "main": "gulpfile.js",
   "keywords": [
     "javascript",
@@ -12,7 +12,7 @@
     "table"
   ],
   "license": "MIT",
-  "homepage": "thibaudbe.github.io/jscript/",
+  "homepage": "afzalmd21.github.io/tths/",
   "ignore": [
     "**/.*",
     "node_modules",
