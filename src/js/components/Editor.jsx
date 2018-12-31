@@ -52,7 +52,7 @@ var Editor = React.createClass({
 				<ul className="tabs">
 					<li>
 						<input type="radio" name="tabs" id="tab1" defaultChecked />
-						<label htmlFor="tab1">HTML</label>
+						<label htmlFor="tab1">HTMLS</label>
 						<div id="tab-content1" className="tab-content tab-editor">
 							<AceEditor 
 								name="html"
