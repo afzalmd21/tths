@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/afzalmd21/thss.git"
+    "url": "https://github.com/afzalmd21/tths.git"
   },
   "author": "ths. <contact@ths.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/afzalmd21/jscript/issues"
+    "url": "https://github.com/afzalmd21/tths/issues"
   },
-  "homepage": "https://github.com/afzalmd21/jscript",
+  "homepage": "https://github.com/afzalmd21/tths",
   "devDependencies": {
     "browser-sync": "^2.0.1",
     "browserify": "^10.2.3",
