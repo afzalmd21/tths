@@ -24,7 +24,7 @@ var Index = React.createClass({
 			return <div>Loading</div>;
 
 		return (
-			<DocumentTitle title={'JScript • '+ this.state.settings.title}>
+			<DocumentTitle title={'Learn Coding '+ this.state.settings.title}>
 				<div id="form">
 					<Navbar {...this.state} />
 					<Editor {...this.state} />
