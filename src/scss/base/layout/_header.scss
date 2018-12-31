@@ -1,0 +1,145 @@
+
+.header {
+	height: 40px;
+	background: $header;
+  position: relative;
+  z-index: 20;
+
+	.logo {
+	  display: inline-flex;
+	 
+    @media screen and (max-width: $tablet) {
+		  margin-left: .8em;
+	    margin-right: .8em;
+    }
+    @media screen and (min-width: $tablet) {
+		  margin-left: 1.8em;
+	    margin-right: 1.8em;
+    }
+
+		h1 {
+			margin: 0;
+			color: $orange;
+			
+			b { 
+				color: #fff;
+			}
+		}
+	}
+
+	li a {
+		color: $header-links;
+		padding: .8em 1em;
+
+		span {
+			font-size: .7em;
+		  text-transform: uppercase;
+		  position: relative;
+		  font-weight: bold;
+		  top: -2px;
+		  text-align: center;
+		  
+		  @media screen and (max-width: $tablet) {
+		  	display: none;
+		  }
+		}
+
+		.fa {
+			font-size: 1.2em;
+			color: $header-links-icons;
+
+			@media screen and (min-width: $tablet) {
+				margin-right: .5em;
+			}
+		}
+
+		&:hover {
+			color: #fff;
+			background: $header-links-hover;
+		}
+
+	}
+
+	.actions {
+		a.active {
+			background: $header-links-hover;
+		}
+	}
+
+	.tabs {
+		position: absolute;
+		left: 50%;
+		margin-left: -108px;
+	}
+
+	.settings {
+		float: right;
+
+		textarea {
+		  margin-bottom: auto;
+		}
+
+		.input-group {
+			position: relative;
+			display: block;
+			background-color: #fff;
+			margin-bottom: 10px;
+
+			input {
+			  // padding-right: 2.8em;
+			  @include ellipsis(185px);
+			  margin-bottom: auto;
+			}
+
+			button {
+				position: absolute;
+				top: 0;
+				right: 0;
+				font-size: 1.2em;
+				background: #fff;
+				color: lighten($blue, 60%);
+				padding: .38em 0.9em;
+				text-align: center;
+
+				&:focus {
+					outline: 0;
+				}
+			}
+		}
+
+		.libraries {
+			display: table;
+		  width: 100%;
+
+			li {
+				
+				a {
+					color: lighten($blue, 60%);
+
+					&.link {
+						text-decoration: underline;
+						float: left;
+					  padding: .2em 1em .4em 0;
+					  @include ellipsis(185px);
+					}
+
+					&.remove {
+						text-decoration: none;
+						float: right;
+						padding: .3em .45em
+					}
+				}
+			}
+		}
+
+		label {
+			margin:0;
+			padding: .4em .4em .4em 0;
+			cursor: pointer;
+
+			input {
+				float: right;
+			}
+		}
+	}
+}

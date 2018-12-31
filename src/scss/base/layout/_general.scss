@@ -1,0 +1,35 @@
+
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+html, body {
+	// height: 100%;
+	margin: 0;
+	// overflow: hidden;
+	font-size: .9em;
+}
+
+button, input, textarea {
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	border: none !important;
+}
+
+
+
+ul.inline {
+	display: inline-flex;
+
+	& > li {
+	  display: inline-flex;
+
+		a {}
+	}
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+

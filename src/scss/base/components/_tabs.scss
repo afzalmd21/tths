@@ -1,0 +1,99 @@
+
+.tabs {
+  background: $medium-blue;
+  display: inline-block;
+  width: 100%;
+
+  li {
+    float: left;
+    display: block;
+
+    @media screen and (max-width: $tablet) {
+      width: 25%;
+
+      label {
+        text-align: center;
+      }
+
+      .result-label {
+        display: block !important;
+      }
+    }
+
+  }
+  
+  input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  label {
+    display: block;
+    padding: .8em 1.8em;
+    margin-bottom: 0;
+    color: $grey;
+    cursor: pointer;
+    font-size: .9em;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+  
+  .tab-content {
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 37px;
+    bottom: 0;
+
+    &.tab-editor {
+      @media screen and (max-width: $tablet) {
+        width: 100%;
+      }
+      @media screen and (min-width: $tablet) {
+        width: 66.66% !important;
+      }
+    }
+
+    &.tab-result {
+      @media screen and (max-width: $tablet) {
+        width: 100%;
+        // display: hidden !important;
+      }
+      @media screen and (min-width: $tablet) {
+        display: block !important;
+        width: 33.33% !important;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: initial;
+      }
+    }
+
+    // textarea
+    #inputHtml,
+    #inputScript,
+    #inputStyle {
+      display: none !important;
+      visibility: hidden !important;
+      // position: absolute;
+      // bottom: 0;
+      // right: 0;
+      // margin: 10px 15px;
+      // z-index: 100;
+      // width: 300px
+    }
+  }
+
+  [id^="tab"]:checked + label {
+    background: $blue;
+  }
+
+  [id^="tab"]:checked ~[id^="tab-content"] {
+    display: block;
+  }
+}
